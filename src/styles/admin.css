@@ -193,7 +193,7 @@ body {
   color: #000;
   padding: 10px;
   border-radius: 6px;
-  width: 180px;
+  width: 100%;
   outline: none;
   transition: 0.3s ease;
 }
@@ -480,3 +480,4 @@ body {
     padding-bottom: 90px; /* space for bottom navbar */
   }
 }
+
