@@ -450,7 +450,7 @@ body {
     text-decoration: none;
     padding: 8px 0;
     gap: 4px;
-    color: #bbb;
+    color: #000;
     font-size: 12px;
     transition: color 0.3s, transform 0.2s;
     position: relative;
@@ -458,13 +458,13 @@ body {
 
   .sidebar a .icon {
     font-size: 24px;
-    color: #bbb;
+    color: #000;
     transition: color 0.3s;
   }
 
   .sidebar a .label {
     font-size: 10px;
-    color: #bbb;
+    color: #000;
   }
 
   .sidebar a.active,
@@ -481,7 +481,7 @@ body {
   .sidebar a.active::after {
     content: '';
     position: absolute;
-    top: -6px;
+    top: 6px;
     width: 8px;
     height: 5px;
     border-radius: 50%;
@@ -500,6 +500,7 @@ body {
     padding-bottom: 90px; /* space for bottom navbar */
   }
 }
+
 
 
 
