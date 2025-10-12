@@ -450,7 +450,7 @@ body {
     text-decoration: none;
     padding: 8px 0;
     gap: 4px;
-    color: #000;
+    color: #bbb;
     font-size: 12px;
     transition: color 0.3s, transform 0.2s;
     position: relative;
@@ -458,23 +458,23 @@ body {
 
   .sidebar a .icon {
     font-size: 24px;
-    color: #000;
+    color: #bbb;
     transition: color 0.3s;
   }
 
   .sidebar a .label {
     font-size: 10px;
-    color: #000;
+    color: #bbb;
   }
 
   .sidebar a.active,
   .sidebar a:hover {
-    color: #fff;
+    color: #000;
   }
 
   .sidebar a.active .icon,
   .sidebar a:hover .icon {
-    color: #fff;
+    color: #000;
   }
 
   /* Active indicator circle */
@@ -500,6 +500,7 @@ body {
     padding-bottom: 90px; /* space for bottom navbar */
   }
 }
+
 
 
 
