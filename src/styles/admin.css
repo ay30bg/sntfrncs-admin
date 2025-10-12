@@ -448,7 +448,7 @@ body {
 
   .sidebar a.active,
   .sidebar a:hover {
-    color: #000;
+    color: #fff;
   }
 
   .sidebar a.active .icon,
@@ -479,5 +479,6 @@ body {
     padding-bottom: 90px; /* space for bottom navbar */
   }
 }
+
 
 
