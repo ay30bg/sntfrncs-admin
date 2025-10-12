@@ -99,7 +99,7 @@ import Header from "../components/Header";
 import "../styles/admin.css";
 
 // ✅ Automatically use correct API base URL
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:5000/api";
+const API_URL = process.env.REACT_APP_API_URL || "https://snt-frncs-backend-mauve.vercel.app/api";
 
 export default function Products() {
   const [products, setProducts] = useState([]);
@@ -367,3 +367,4 @@ export default function Products() {
     </div>
   );
 }
+
