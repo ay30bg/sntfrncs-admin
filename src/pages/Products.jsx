@@ -183,42 +183,49 @@ export default function Products() {
             />
 
             {/* Variations Section */}
-            <div style={{ border: "1px solid #ccc", padding: "10px", margin: "10px 0" }}>
-              <h4>Variations</h4>
-              <input
-                type="text"
-                name="color"
-                placeholder="Color"
-                value={variationForm.color}
-                onChange={handleVariationChange}
-              />
-              <input
-                type="text"
-                name="image"
-                placeholder="Image URL"
-                value={variationForm.image}
-                onChange={handleVariationChange}
-              />
-              <input
-                type="number"
-                name="inStock"
-                placeholder="Stock"
-                value={variationForm.inStock}
-                onChange={handleVariationChange}
-              />
-              <button type="button" onClick={addVariation}>
-                Add Variation
-              </button>
+            {/* Variations Section */}
+<div className="variations-section">
+  <h4>Variations</h4>
+  <div className="variation-inputs">
+    <input
+      type="text"
+      name="color"
+      placeholder="Color"
+      value={variationForm.color}
+      onChange={handleVariationChange}
+    />
+    <input
+      type="text"
+      name="image"
+      placeholder="Image URL"
+      value={variationForm.image}
+      onChange={handleVariationChange}
+    />
+    <input
+      type="number"
+      name="inStock"
+      placeholder="Stock"
+      value={variationForm.inStock}
+      onChange={handleVariationChange}
+    />
+    <button type="button" onClick={addVariation}>
+      Add Variation
+    </button>
+  </div>
 
-              <ul>
-                {form.variations.map((v, idx) => (
-                  <li key={idx}>
-                    {v.color} - Stock: {v.inStock}{" "}
-                    <img src={v.image} alt={v.color} width="40" />
-                  </li>
-                ))}
-              </ul>
-            </div>
+  {form.variations.length > 0 && (
+    <ul className="variation-list">
+      {form.variations.map((v, idx) => (
+        <li key={idx}>
+          <span className="variation-color">{v.color}</span> - Stock:{" "}
+          {v.inStock}{" "}
+          <img src={v.image} alt={v.color} width="40" className="variation-img" />
+        </li>
+      ))}
+    </ul>
+  )}
+</div>
+
 
             <button type="submit">Add Product</button>
           </form>
@@ -276,6 +283,7 @@ export default function Products() {
     </div>
   );
 }
+
 
 
 
