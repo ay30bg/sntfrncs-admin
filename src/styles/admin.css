@@ -469,12 +469,12 @@ body {
 
   .sidebar a.active,
   .sidebar a:hover {
-    color: #000;
+    color: #bbb;
   }
 
   .sidebar a.active .icon,
   .sidebar a:hover .icon {
-    color: #000;
+    color: #bbb;
   }
 
   /* Active indicator circle */
@@ -500,6 +500,7 @@ body {
     padding-bottom: 90px; /* space for bottom navbar */
   }
 }
+
 
 
 
