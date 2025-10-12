@@ -227,7 +227,7 @@ export default function Products() {
 </div>
 
 
-            <button type="submit">Add Product</button>
+            <button type="submit" className="submit-btn">Add Product</button>
           </form>
 
           {/* Products Table */}
@@ -283,6 +283,7 @@ export default function Products() {
     </div>
   );
 }
+
 
 
 
