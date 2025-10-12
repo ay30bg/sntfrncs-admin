@@ -224,54 +224,58 @@ export default function Products() {
           </form>
 
           {/* Products Table */}
-          <table className="product-table">
-            <thead>
-              <tr>
-                <th>Name</th>
-                <th>Price</th>
-                <th>Stock</th>
-                <th>Category</th>
-                <th>Images</th>
-                <th>Variations</th>
-                <th>Action</th>
-              </tr>
-            </thead>
-            <tbody>
-              {products.map((p) => (
-                <tr key={p._id}>
-                  <td>{p.name}</td>
-                  <td>{p.price}</td>
-                  <td>{p.inStock}</td>
-                  <td>{p.category}</td>
-                  <td>
-                    {p.images?.map((img, i) => (
-                      <img key={i} src={img} alt={p.name} width="50" />
-                    ))}
-                  </td>
-                  <td>
-                    {p.variations?.map((v, i) => (
-                      <div key={i}>
-                        {v.color} - {v.inStock}{" "}
-                        <img src={v.image} alt={v.color} width="40" />
-                      </div>
-                    ))}
-                  </td>
-                  <td>
-                    <button
-                      className="delete-btn"
-                      onClick={() => handleDeleteProduct(p._id)}
-                    >
-                      Delete
-                    </button>
-                  </td>
-                </tr>
-              ))}
-            </tbody>
-          </table>
+          
+          <div className="table-container">
+  <table className="product-table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Stock</th>
+        <th>Category</th>
+        <th>Images</th>
+        <th>Variations</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      {products.map((p) => (
+        <tr key={p._id}>
+          <td>{p.name}</td>
+          <td>{p.price}</td>
+          <td>{p.inStock}</td>
+          <td>{p.category}</td>
+          <td>
+            {p.images?.map((img, i) => (
+              <img key={i} src={img} alt={p.name} width="50" />
+            ))}
+          </td>
+          <td>
+            {p.variations?.map((v, i) => (
+              <div key={i}>
+                {v.color} - {v.inStock}{" "}
+                <img src={v.image} alt={v.color} width="40" />
+              </div>
+            ))}
+          </td>
+          <td>
+            <button
+              className="delete-btn"
+              onClick={() => handleDeleteProduct(p._id)}
+            >
+              Delete
+            </button>
+          </td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
         </div>
       </div>
     </div>
   );
 }
+
 
 
