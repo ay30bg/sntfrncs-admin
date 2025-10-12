@@ -482,8 +482,8 @@ body {
     content: '';
     position: absolute;
     top: -6px;
-    width: 6px;
-    height: 6px;
+    width: 8px;
+    height: 5px;
     border-radius: 50%;
     background: #fff;
   }
@@ -500,6 +500,7 @@ body {
     padding-bottom: 90px; /* space for bottom navbar */
   }
 }
+
 
 
 
