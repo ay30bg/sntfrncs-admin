@@ -253,7 +253,7 @@ body {
   background: #4CAF50;       
   border: none;
   color: #fff;
-  padding: 6px 12px;
+  padding: 6px 10px;
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -518,6 +518,7 @@ body {
     padding-bottom: 90px; /* space for bottom navbar */
   }
 }
+
 
 
 
