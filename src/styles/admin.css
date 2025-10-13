@@ -436,6 +436,58 @@ body {
   background-color: #fafafa;
 }
 
+/* ===== NOTIFICATIONS SECTION ===== */
+.notifications {
+  margin-top: 2rem;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  padding: 1.5rem 2rem;
+  transition: all 0.3s ease;
+}
+
+.notifications h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.notifications ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.notifications li {
+  background: #f9fafc;
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  margin-bottom: 0.8rem;
+  border-left: 5px solid #007bff;
+  transition: transform 0.2s ease, background 0.3s ease;
+}
+
+.notifications li:hover {
+  background: #eef4ff;
+  transform: translateX(4px);
+}
+
+.notifications li strong {
+  color: #111;
+  font-size: 1rem;
+}
+
+.notifications li small {
+  display: block;
+  color: #666;
+  margin-top: 0.2rem;
+}
+
+.notifications p {
+  color: #888;
+  font-style: italic;
+}
 
 /* ===== RESPONSIVENESS ===== */
 
@@ -535,6 +587,7 @@ body {
     padding-bottom: 90px; /* space for bottom navbar */
   }
 }
+
 
 
 
