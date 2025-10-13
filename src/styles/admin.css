@@ -282,6 +282,31 @@ body {
   color: #fff;
 }
 
+/* ===== MOBILE BUTTON STYLING ===== */
+@media (max-width: 768px) {
+  .edit-btn,
+  .delete-btn {
+    padding: 8px 10px;      /* slightly smaller for mobile */
+    font-size: 12px;        /* smaller text */
+    margin: 4px 0;          /* vertical spacing between buttons if stacked */
+    width: 48%;              /* each button takes half the width */
+    display: inline-block;   /* keep them side by side */
+    text-align: center;
+  }
+
+  /* Wrap buttons if they exceed row */
+  td {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
+  .edit-btn {
+    margin-right: 4px; /* spacing between buttons */
+  }
+}
+
+
 .table-container {
   overflow-x: auto; /* Enable horizontal scroll */
   width: 100%;
@@ -517,6 +542,7 @@ body {
     padding-bottom: 90px; /* space for bottom navbar */
   }
 }
+
 
 
 
