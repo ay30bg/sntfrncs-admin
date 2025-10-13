@@ -289,7 +289,7 @@ body {
     padding: 8px 10px;      /* slightly smaller for mobile */
     font-size: 12px;        /* smaller text */
     margin: 4px 0;          /* vertical spacing between buttons if stacked */
-    width: 48%;              /* each button takes half the width */
+    width: 100%;              /* each button takes half the width */
     display: inline-block;   /* keep them side by side */
     text-align: center;
   }
@@ -535,6 +535,7 @@ body {
     padding-bottom: 90px; /* space for bottom navbar */
   }
 }
+
 
 
 
