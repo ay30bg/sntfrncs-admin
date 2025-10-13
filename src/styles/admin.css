@@ -258,6 +258,7 @@ body {
   cursor: pointer;
   transition: 0.3s;
   text-transform: uppercase;
+  margin-right: 8px;
 }
 
 .edit-btn:hover {
@@ -516,6 +517,7 @@ body {
     padding-bottom: 90px; /* space for bottom navbar */
   }
 }
+
 
 
 
