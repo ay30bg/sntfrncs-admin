@@ -316,7 +316,7 @@ export default function Products() {
                     </td>
                     <td>
                       <button className="edit-btn" onClick={() => handleEditProduct(p)}>
-                        Edit
+                        Update
                       </button>
                       <button className="delete-btn" onClick={() => handleDeleteProduct(p._id)}>
                         Delete
@@ -332,5 +332,6 @@ export default function Products() {
     </div>
   );
 }
+
 
 
