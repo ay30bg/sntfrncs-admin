@@ -42,7 +42,7 @@ export default function Dashboard() {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const res = await axios.get(`${process.env.REACT_APP_API_URL}/api/products`);
+        const res = await axios.get(`${process.env.REACT_APP_API_URL}/products`);
         setProductsCount(res.data.length);
       } catch (err) {
         console.error("Failed to fetch products:", err);
@@ -68,4 +68,5 @@ export default function Dashboard() {
     </div>
   );
 }
+
 
