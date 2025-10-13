@@ -294,13 +294,6 @@ body {
     text-align: center;
   }
 
-  /* Wrap buttons if they exceed row */
-  td {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 4px;
-  }
-
   .edit-btn {
     margin-right: 4px; /* spacing between buttons */
   }
@@ -542,6 +535,7 @@ body {
     padding-bottom: 90px; /* space for bottom navbar */
   }
 }
+
 
 
 
