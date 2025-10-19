@@ -179,6 +179,82 @@ body {
   font-size: 0.9rem;
 }
 
+/* ===== Orders Section ===== */
+.orders-section {
+  margin-top: 40px;
+}
+
+.orders-section h2 {
+  margin-bottom: 15px;
+  font-size: 22px;
+}
+
+.no-orders {
+  text-align: center;
+  font-size: 16px;
+  color: #666;
+  padding: 20px;
+}
+
+/* ===== Orders Table ===== */
+.orders-table-wrapper {
+  overflow-x: auto;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 800px;
+}
+
+.orders-table th,
+.orders-table td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+}
+
+.orders-table th {
+  background: #f8f9fa;
+  font-weight: 600;
+}
+
+.orders-table tr:hover {
+  background: #fdfdfd;
+}
+
+.status {
+  font-weight: 500;
+  text-transform: capitalize;
+  padding: 4px 8px;
+  border-radius: 6px;
+  text-align: center;
+}
+
+.status.pending {
+  color: #b57d00;
+  background: #fff3cd;
+}
+
+.status.confirmed {
+  color: #155724;
+  background: #d4edda;
+}
+
+.status.shipped {
+  color: #004085;
+  background: #cce5ff;
+}
+
+.status.delivered {
+  color: #0f5132;
+  background: #d1e7dd;
+}
+
+
 /* ===== PRODUCT FORM ===== */
 .product-form {
   display: flex;
@@ -587,6 +663,7 @@ body {
     padding-bottom: 90px; /* space for bottom navbar */
   }
 }
+
 
 
 
