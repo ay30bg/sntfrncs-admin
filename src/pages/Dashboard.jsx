@@ -65,7 +65,7 @@ export default function Dashboard() {
         setProductsCount(productsRes.data.length);
 
         // Fetch orders
-        const ordersRes = await axios.get(`${process.env.REACT_APP_API_URL}/api/orders`);
+        const ordersRes = await axios.get(`${process.env.REACT_APP_API_URL}/orders`);
         const ordersData = ordersRes.data;
         setOrders(ordersData);
         setOrdersCount(ordersData.length);
@@ -146,4 +146,5 @@ export default function Dashboard() {
     </div>
   );
 }
+
 
